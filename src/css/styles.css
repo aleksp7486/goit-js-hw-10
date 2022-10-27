@@ -10,11 +10,84 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  background: url('../image/world.svg') 0 0 / 100% no-repeat;
+}
+
+.contaner {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 #search-box {
+  align-self: center;
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border: 2px solid #abbbbd;
+  border-radius: 4px;
+}
+
+#search-box:focus {
+  outline: none;
+  border: 2px solid #7b99a6;
+}
+
+.country-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.country-list li {
+  padding: 5px 10px;
+  background-color: #cbd2d8c5;
+}
+
+.country-list li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.country-list li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.country-list img {
+  margin-right: 10px;
+  width: 25px;
+}
+
+.country-list p {
+  margin: 0;
+  display: inline-block;
+}
+
+.country-info__wrap {
+  padding: 10px 10px;
+  background-color: #cbd2d8c5;
+  border-radius: 4px;
+}
+
+.country-info img {
+  width: 80px;
+  margin-right: 20px;
+}
+.country-info h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+.country-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.country-info span {
+  padding-left: 10px;
 }

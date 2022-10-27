@@ -15,7 +15,9 @@
   "author": "Aleksandr Popov <aleksandrpopov7486@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "debounce": "^1.2.1",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
