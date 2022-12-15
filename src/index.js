@@ -23,6 +23,7 @@ function onInput() {
   renderReset();
   fetchCountries(this.value.trim())
     .then(countries => {
+      console.dir(countries);
       if (countries.length > 10) {
         Notify.info(
           'Too many matches found. Please enter a more specific name.'
@@ -36,7 +37,9 @@ function onInput() {
       renderCountryInfo(countries);
     })
     .catch(error => {
-      Notify.failure('Country with this name not found');
+      if (error.message === '404') {
+        Notify.failure('Country with this name not found');
+      }
     });
 }
 
